@@ -97,9 +97,9 @@
                 }
                 
                 // داده‌های شبیه‌سازی شده با کمی نوسان
-                const newGoldPrice = 2680 + Math.random() * 20;
-                const newSilverPrice = 30 + Math.random() * 2;
-                const estimatedUSD = 107800 + (Math.random() - 0.5) * 1000;
+                const newGoldPrice = 4311 + Math.random() * 20;
+                const newSilverPrice = 71 + Math.random() * 2;
+                const estimatedUSD = 135600 + (Math.random() - 0.5) * 1000;
                 const estimatedMesghal = (newGoldPrice * estimatedUSD) / 9.5742;
                 const estimated18Geram = ((newGoldPrice / 31.1) * estimatedUSD) * 0.75;
 
@@ -109,8 +109,8 @@
                     usd: { price: estimatedUSD, change: (Math.random() - 0.5) * 0.2 },
                     mesghalMarket: { price: estimatedMesghal * 1.02, change: (Math.random() - 0.5) * 0.3 },
                     geram18Market: { price: estimated18Geram * 1.015, change: (Math.random() - 0.5) * 0.4 },
-                    dirham: { price: 29345, change: (Math.random() - 0.5) * 0.1 },
-                    uaeGoldPrice: 243.5,
+                    dirham: { price: 37500, change: (Math.random() - 0.5) * 0.1 },
+                    uaeGoldPrice: 39.6,
                 };
             }
         };
@@ -125,7 +125,7 @@
 
         // --- کامپوننت‌ها ---
         
-        function Header({ user, onLoginClick, onLogout }) {
+        function Header({ user, onLoginClick, onLogou }) {
             const { theme, toggleTheme } = useContext(ThemeContext);
             return (
                 <header className="sticky top-0 z-40 bg-white/70 dark:bg-dark-bg/70 backdrop-blur-lg shadow-md">
